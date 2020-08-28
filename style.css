@@ -1,0 +1,222 @@
+/*background image*/
+
+body {
+    background-image: url("clock.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*Title*/
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    color: red;
+    text-shadow: 2px 2px brown;
+}
+
+header p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: greenyellow;
+}
+
+
+/*Menu*/
+
+h3 {
+    color: maroon;
+}
+
+h3:hover {
+    background-color: midnightblue;
+    width: fit-content;
+}
+
+
+/*Contents of menu*/
+
+#menu {
+    font-size: medium;
+    float: left;
+    width: fit-content;
+    border: palegoldenrod;
+}
+
+#menu {
+    display: none;
+}
+
+li {
+    font-size: large;
+    color: lightpink;
+    list-style-type: none;
+}
+
+
+/*Background images list*/
+
+#images li {
+    font-size: medium;
+    color: red;
+}
+
+#images {
+    display: none;
+}
+
+
+/*Background themes list*/
+
+#pads li {
+    font-size: medium;
+}
+
+#pads li:hover {
+    background-color: grey;
+}
+
+#pads span:hover {
+    background-color: gray;
+}
+
+#pads {
+    display: none;
+}
+
+
+/*Theme representation in menu*/
+
+#red {
+    background-color: red;
+    width: fit-content;
+}
+
+#blue {
+    background-color: blue;
+    width: fit-content;
+}
+
+#green {
+    background-color: green;
+    width: fit-content;
+}
+
+#yellow {
+    background-color: yellow;
+    width: fit-content;
+}
+
+#orange {
+    background-color: orange;
+    width: fit-content;
+}
+
+#teal {
+    background-color: teal;
+    width: fit-content;
+}
+
+.li:hover {
+    background-color: hotpink;
+}
+
+
+/*Cancel button*/
+
+#cancel {
+    background-color: sandybrown;
+    color: tomato;
+    font-size: medium;
+    float: right;
+}
+
+#cancel:hover {
+    color: hotpink
+}
+
+
+/*Form style*/
+
+#form {
+    float: right;
+    padding: 10px 10px;
+    background-color: lavenderblush;
+    color: teal;
+}
+
+legend {
+    text-align: justify;
+    color: mediumpurple;
+}
+
+input {
+    border-bottom: wheat;
+}
+
+.addb {
+    background-color: sandybrown;
+    color: tomato;
+    font-size: medium;
+    float: right;
+}
+
+.addb:hover {
+    color: hotpink
+}
+
+
+/*Table style*/
+
+table {
+    float: right;
+    padding: 20px 20px;
+    background-color: slategrey;
+    margin: auto;
+    width: 50%;
+}
+
+caption {
+    color: teal;
+    font-size: x-large;
+}
+
+table td {
+    background-color: honeydew;
+    color: firebrick;
+    text-align: center;
+}
+
+table th {
+    background-color: skyblue;
+    color: darkgoldenrod;
+}
+
+th {
+    min-width: 5em;
+}
+
+tr:nth-child(even) {
+    background-color: honeydew;
+}
+
+footer {
+    position: absolute;
+    bottom: 100px;
+    font-size: xx-large;
+}
+
+#todo,
+#done {
+    background-color: turquoise;
+    font-size: medium;
+}
+
+#todo:hover,
+#done:hover {
+    background-color: khaki;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" href="script.js"></script>
+    <title>To Do List</title>
+</head>
+
+<body>
+
+    <!--Title of the page-->
+    <header>
+        <h1>TO DO LIST</h1>
+        <p><cite><q>To do two things at once is to do neither.</q></cite><br> ~Publius Syrus</p>
+    </header>
+
+    <!--Menu to change theme and background-->
+    <h3 onclick="showMenu()">Menu</h3>
+
+    <!--Contents of menu-->
+    <div id="menu">
+        <li onclick="showImages()">Change background image</li>
+
+        <!--List of background images-->
+        <div id="images">
+            <li onclick="checklist()">Checklist</li>
+            <li onclick="clock()">Clock</li>
+            <li onclick="study()">Reading</li>
+        </div>
+
+        <li onclick="showTheme()">Change theme</li>
+
+        <!--List of themes-->
+        <div id="pads">
+            <li id="red" onclick="padrb()">Red<span id="blue">Blue</span></li>
+            <li id="green" onclick="padgy()">Green<span id="yellow">Yellow</span></li>
+            <li id="orange" onclick="padot()">Orange<span id="teal">Teal</span></li>
+        </div>
+
+        <!--To close menu-->
+        <li onclick="hideMenu()" id="cancel">Cancel</li>
+    </div>
+
+    <!--Form to get tasks-->
+    <form id="form" onsubmit="addTask(event)">
+        <fieldset>
+            <legend>Enter your tasks:</legend>
+
+            <label class="task" for="work">Task:</label>
+            <input type="text" id="work" placeholder="E.g:Yoga" required><br>
+
+            <label class="time" for="time">Time:</label>
+            <input type="number" id="time" min="5" max="360" value="10">
+
+            <span>
+            <button type="submit" class="addb">Add</button>
+        </span>
+        </fieldset>
+    </form>
+
+    <!--Table to show tasks-->
+    <table id="table">
+        <caption>Your chores</caption>
+        <tr>
+            <th>&#x1F4C3</th>
+            <!--Works-->
+            <th> &#x231A</th>
+            <!--Time-->
+            <th>Status</th>
+            <th>
+                <button type="reset" onclick="removeAll()">&#x274E</button>
+            </th>
+        </tr>
+    </table>
+
+    <!--To show number of tasks-->
+    <footer style="color: red;">
+        <p>Tasks added:
+            <div id="tasks"></div>
+        </p>
+    </footer>
+
+</body>
+
+</html>
